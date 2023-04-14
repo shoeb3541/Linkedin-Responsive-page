@@ -1,0 +1,743 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+[class*="col-"]
+{
+float: left;
+padding: 15px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+ /* ************************************Header Start Here**************************************  */
+
+.header{
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    padding-left: 90px;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    text-align: center;
+}
+
+
+.header ul{
+ display: flex;
+justify-content: space-evenly;
+list-style: none;
+
+}
+
+
+.header ul li{
+    font-size: .9rem;
+width: 95px;
+text-align: center;
+height: 45px;
+color: gray;
+}
+.header ul li a{
+text-decoration: none;
+color: gray;
+}
+
+.linkedin_logo i{
+    color: #0a66c2;
+    font-size: 2.2rem;
+    margin-left: 30px;
+}
+.header .search{
+    width: 24vw;
+    height: 35px;
+   margin-right: 12vw;
+   background-color: rgb(204, 221, 226);
+   position: relative;
+}
+input{
+    width: 15vw;
+    height: 5vh;
+    margin-left: 1vw;
+    border: none;
+    background: transparent;
+
+    }
+.header ul li span{
+    display: block;
+    margin-right: 5px;
+
+}
+.header .search .search-icon{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+input::placeholder
+{
+    color: black;
+}
+
+.sup-placing{
+    position: relative;
+}
+.message-sup{
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    height: 18px;
+    width: 14px;
+    padding: 4px;
+    position: absolute;
+    top: -6px;
+    right: -13px;
+    border-radius: 6px;
+}
+.sup-size{
+    font-size: .6rem;
+}
+.vertical-line{
+width: 1px;
+height: 5vh;
+background-color: black;
+margin-left: 15px;
+}
+
+.header-image-section{
+    position: relative;
+}
+.header-image-section>img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.image_down-arrow{
+    display: block;
+    margin-top: 20px;
+}
+
+
+.premium-anchor{
+text-decoration: none;
+color: black;
+font-size: 0.9rem;
+margin-right: 90px;
+}
+
+ /* ************************************Header End Here**************************************  */
+
+
+.row{
+    /* Used for main wrapper */
+    background-color:rgb(207, 192, 174);
+    padding-left:calc(100%/1/10) ;
+    padding-right: calc(100%/1/10);
+    margin:10px;
+    margin-top: 10vh;
+}
+ /* ************************************Left Section Start Here**************************************  */
+
+.left-div-bck{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left-div-details{
+background-color: white;
+border-radius: 1px;
+
+}
+
+
+.left-profile{
+    min-height: 75px;
+background-image: linear-gradient(-200deg, rgba(212, 5, 67, 0.973) 50%,rgb(204, 144, 33)  ,rgb(88, 180, 88));
+position: relative;
+border-radius: 10px 10px 0px 0px;
+}
+.left-profile>img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+.left-div-details ~hr{
+width: 2px;
+}
+.hr{
+    width:2px;
+}
+.skills-div{
+    height: 100px;
+
+}
+.skills-div>h3{
+padding-top: 40px;
+padding-left: 50px;
+}
+.skills-div>p{
+margin-left: 20px;
+padding-left: 10px;
+}
+.connections-div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.grow{
+padding-left: 10px;
+
+}
+.views{
+    font-size: 18px;
+    font-weight: 500;
+}
+.connections-div span ~span {
+    color: blue;
+    font-weight: 600;
+}
+
+.access{
+    padding: 10px;
+}
+.access  p{
+color: gray;
+padding-left: 10px;
+
+
+}
+.access .premium{
+    padding-left: 10px;
+    color: black;
+}
+.item{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+border-radius:0 0 10px 10px;
+border: 1px solid gray;
+}
+
+.tensor-flow{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.tensor-flow-placing{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+}
+
+.tensor-flow-group-placing{
+    padding: 10px;
+}
+.tensor-flow-group-placing .group{
+    color: blue;
+    padding: 10px;
+}
+
+.tensor-flow-hashtag{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+}
+.tensor-flow-hashtag p{
+    color: blue;
+}
+.tensor-flow-hashtag .flow{
+    padding: 5px;
+    margin-top: 10px;
+
+}
+.flow{
+padding: 5px;
+margin-top: 10px;
+ /* ************************************Left Section End Here**************************************  */
+
+}
+
+ /* ************************************Middle Section Start Here**************************************  */
+
+.post-div{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom:10px;
+    padding-bottom: 5px;
+}
+.post-inner-div{
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+}
+.post-input_type{
+    border: 1px solid black;
+    width: 430px;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: black;
+}
+.post-icon-div{
+    display: flex;
+    margin-bottom:10px ;
+}
+.post-icon-div h4{
+    padding-left: 10px;
+}
+.photo-icon{
+    color:cornflowerblue ;
+    padding-left: 40px;
+}
+.youtube-icon{
+    padding-left: 40px;
+    color: green;
+}
+.calendar-icon{
+    padding-left: 40px;
+    color: orangered;
+}
+.fa-calenar-icon{
+    padding-left: 40px;
+    color: brown;
+}
+.myntra-div{
+    background-color: white;
+}
+.myntra-fashion-details{
+    padding-left: 20px;
+}
+.comments-details{
+    color: gray;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+
+.yash-creation-background{
+    background-color: white;
+}
+.yash-creation-details{
+    padding-left: 20px;
+}
+.paragraph-content{
+    padding: 10px;
+}
+.reaction-comments-details{
+    color: gray;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.reaction-section-images{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.middle-image-div{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+.myntra-middle-div{
+    display: flex;
+    padding: 10px 0px 10px 0px ;
+    /* position: relative; */
+}
+
+.myntra-middle-image{
+    width: 35px;
+    height:40px;
+    margin-left: 10PX;
+
+}
+.myntra-fashion-img-div{
+   max-width: 100%;
+   height: auto;
+   height: 250px;
+   width: 500px;
+   margin: 0px;
+   padding: 0px;
+}
+.reaction{
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+
+}
+.reaction-div{
+display: flex;
+margin-bottom: 10px;
+}
+
+.reaction-div h4
+{
+    padding-top: 10px;
+}
+.reaction-img{
+    height: 20px;
+    width: 25px;
+    margin: 10px;
+}
+
+.myntra-fashion-video-div{
+    max-width: 100%;
+    height: auto;
+    height: 250px;
+    width: 500px;
+
+ }
+.mytra-fashion-details{
+    display: flex;
+/* ************************************Middle Section End Here**************************************  */
+
+}
+ /* ************************************Right Section Start Here**************************************  */
+
+.right-news-div{
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.right-news-div > h4{
+    padding: 10px;
+}
+.news-details-div{
+    display: flex;
+    padding: 20px 5px 0px;
+
+}
+.font-circle{
+    font-size: .7rem;
+}
+.daily-cases{
+    padding-left: 10px;
+}
+.readers{
+    padding-left:26px;color: gray;
+}
+.right-div-viewed{
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+.feed-div{
+    margin-bottom: 10px;
+    background-color: white;
+}
+.feed-div-items{
+    display: flex;
+    padding: 30px 0px 10px 0px ;
+}
+.feed-button{
+    height: 30px;
+    width: 180px;
+    border-radius: 30px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.feed-image{
+    width: 33px;
+    height: 35px;
+    margin-left: 5PX;
+}
+ /* ************************************Right Section End Here**************************************  */
+
+
+
+
+ @media screen and (max-width:1468px) {
+
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%}
+    .col-3{width: 25%}
+    .col-4{width: 33.33%}
+    .col-5{width: 41.66%}
+    .col-6{width: 50%}
+    .col-7{width: 58.33%}
+    .col-8{width: 66.66%}
+    .col-9{width: 75%}
+    .col-10{width: 83.33%}
+    .col-11{width: 91.66%}
+    .col-12{width: 100%}
+
+
+}
+
+
+ @media screen and (max-width:1268px){
+
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%}
+    .col-s-3{width: 25%}
+    .col-s-4{width: 33.33%}
+    .col-s-5{width: 41.66%}
+    .col-s-6{width: 50%}
+    .col-s-7{width: 58.33%}
+    .col-s-8{width: 66.66%}
+    .col-s-9{width: 75%}
+    .col-s-10{width: 83.33%}
+    .col-s-11{width: 91.66%}
+    .col-s-12{width: 100%}
+
+}
+@media screen and (max-width:1200px) {
+    .col-s1-1{width: 8.33%;}
+    .col-s1-2{width: 16.66%}
+    .col-s1-3{width: 25%}
+    .col-s1-4{width: 33.33%}
+    .col-s1-5{width: 41.66%}
+    .col-s1-6{width: 50%}
+    .col-s1-7{width: 58.33%}
+    .col-s1-8{width: 66.66%}
+    .col-s1-9{width: 75%}
+    .col-s1-10{width: 83.33%}
+    .col-s1-11{width: 91.66%}
+    .col-s1-12{width: 100%}
+
+
+
+
+
+
+}
+
+@media screen and (max-width:878px) {
+    .col-s11-1{width: 8.33%;}
+    .col-s11-2{width: 16.66%}
+    .col-s11-3{width: 25%}
+    .col-s11-4{width: 33.33%}
+    .col-s11-5{width: 41.66%}
+    .col-s11-6{width: 50%}
+    .col-s11-7{width: 58.33%}
+    .col-s11-8{width: 66.66%}
+    .col-s11-9{width: 75%}
+    .col-s11-10{width: 83.33%}
+    .col-s11-11{width: 91.66%}
+    .col-s11-12{width: 100%}
+
+    .row {
+        padding-left:   0px;
+        padding-right: 0px;
+        margin: 0px;
+        margin-top: 10vh;
+    }
+
+}
+@media screen and (max-width:592px) {
+    .photo-icon,.youtube-icon,.calendar-icon,.fa-calenar-icon{
+        padding-left: 20px;
+    }
+
+}
+@media screen and (max-width:494px) {
+    .photo-icon,.youtube-icon,.calendar-icon,.fa-calenar-icon{
+        padding-left: 10px;
+    }
+
+}
+@media screen and (max-width:441px) {
+    .photo-icon,.youtube-icon,.calendar-icon,.fa-calenar-icon{
+        padding-left: 5px;
+    }
+
+}
+@media screen and (max-width:417px) {
+    .photo-icon,.youtube-icon,.calendar-icon,.fa-calenar-icon{
+        padding-left: 0px;
+    }
+
+}
+/* some went wrong */
+
+@media screen and (max-width:393px) {
+    .reaction-img{
+
+        margin: 5px;
+
+    }
+
+}
+@media screen and (max-width:346px) {
+    .reaction-img{
+        height: 10px;
+        width: 15px;
+        margin: 0px;
+        margin-left: auto;
+    }
+    .reaction-div h4
+    {
+        padding-top: 0px;
+    margin-left: auto;
+    }
+
+}
+@media screen and (max-width:294px) {
+    .post-icon-div h4{
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width:1319px){
+    .header ul li{
+
+    width: 150px;
+
+    }
+    .header .search{
+        width: 40vw;
+
+       margin: 0;
+
+
+    }
+
+}
+@media screen and (max-width:1069px) {
+    .header{
+
+        padding-left: 0px;
+
+    }
+}
+@media screen and (max-width:955px) {
+    .premium-anchor{
+
+        margin-right: 0px;
+        }
+
+
+
+
+
+
+
+}
+@media screen and (max-width:841px) {
+
+    .premium-anchor{
+        position: fixed;
+        left: 74%;
+        top: 95%;
+        color: gold;
+        /* text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        margin-right: 90px; */
+        }
+}
+@media screen and (max-width:768px) {
+
+    .premium-anchor{
+        position: fixed;
+        left: 69%;
+        top: 95%;
+        color: gold;
+
+        }
+}
+@media screen and (max-width:768px) {
+
+    .premium-anchor{
+        position: fixed;
+        left: 55%;
+        top: 95%;
+        color: gold;
+
+        }
+
+
+}
+@media screen and (max-width:461px) {
+
+    .premium-anchor{
+        position: fixed;
+        left: 45%;
+        top: 90%;
+        color: gold;
+
+        }
+}
+@media screen and (max-width:353px) {
+
+    .premium-anchor{
+        position: fixed;
+        left: 35%;
+        top: 90%;
+        color: gold;
+
+        }
+}
+@media screen and (max-width:725px) {
+    .header .search{
+        width: 10vw;
+    }
+
+    .header .search .search-icon{
+        display: none;
+    }
+}
+@media screen and (max-width:633px){
+    .header ul li{
+        font-size: .8rem;
+
+    }
+}
+@media screen and (max-width:535px) {
+    .linkedin_logo i{
+        margin: 0px;
+    font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:475px) {
+    input::placeholder
+{
+    font-size: 10px;
+}
+}
+@media screen and (max-width:353px)
+{
+    .header-image-section>img,.vertical-line{
+        display: none;
+
+    }
+
+
+
+}
